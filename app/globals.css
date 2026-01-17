@@ -24,3 +24,21 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+
+.colored-toast.swal2-icon-success {
+  background-color: #16a34a !important;
+}
+
+.colored-toast.swal2-icon-error {
+  background-color: #dc2626 !important;
+}
+
+.colored-toast.swal2-icon-warning {
+  background-color: #f59e0b !important;
+}
+
+.colored-toast.swal2-icon-info {
+  background-color: #2563eb !important;
+}
