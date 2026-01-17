@@ -43,7 +43,7 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-gray-100">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Section Header */}
@@ -52,7 +52,7 @@ export default function Features() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Powerful Features
