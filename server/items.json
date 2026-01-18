@@ -1,14 +1,142 @@
 [
   {
-    "id": "1",
-    "name": "Laptop",
-    "description": "High performance laptop",
-    "price": 1200
+    "id": 1,
+    "name": "MacBook Pro 14-inch",
+    "description": "Apple M2 Pro chip with exceptional performance for professionals and creators.",
+    "price": 1899,
+    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
   },
   {
-    "id": "2",
-    "name": "Phone",
-    "description": "Smart smartphone",
-    "price": 800
+    "id": 2,
+    "name": "Dell XPS 15",
+    "description": "Premium Windows laptop with stunning display and powerful performance.",
+    "price": 1599,
+    "image": "https://images.unsplash.com/photo-1527430253228-e93688616381"
+  },
+  {
+    "id": 3,
+    "name": "iPhone 13 Pro",
+    "description": "Latest iPhone with A17 chip, Pro camera system, and titanium design.",
+    "price": 999,
+    "image": "https://i.ibb.co.com/wFn0wgpj/apple-iphone-13-pro-silver-color-image.webp"
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy S23 Ultra",
+    "description": "Flagship Android phone with 200MP camera and S-Pen support.",
+    "price": 1099,
+    "image": "https://images.unsplash.com/photo-1678911820864-e2c567c655d7"
+  },
+  {
+    "id": 5,
+    "name": "Sony WH-1000XM5",
+    "description": "Industry-leading noise cancelling headphones with premium sound.",
+    "price": 399,
+    "image": "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb"
+  },
+  {
+    "id": 6,
+    "name": "Apple Watch Series 9",
+    "description": "Advanced health tracking and seamless Apple ecosystem integration.",
+    "price": 429,
+    "image": "https://images.unsplash.com/photo-1546868871-7041f2a55e12"
+  },
+  {
+    "id": 7,
+    "name": "Logitech MX Master 3S",
+    "description": "Ergonomic wireless mouse designed for productivity and precision.",
+    "price": 99,
+    "image": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04"
+  },
+  {
+    "id": 8,
+    "name": "iPad Pro 12.9-inch",
+    "description": "Powerful tablet with Liquid Retina XDR display and Apple Pencil support.",
+    "price": 1299,
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3"
+  },
+  {
+    "id": 9,
+    "name": "Nikkon EOS R6",
+    "description": "Mirrorless camera with fast autofocus and exceptional image quality.",
+    "price": 2499,
+    "image": "https://i.ibb.co.com/1f2QbM28/giant-72046.jpg"
+  },
+  {
+    "id": 10,
+    "name": "PlayStation 5",
+    "description": "Next-generation gaming console with immersive graphics and ultra-fast SSD.",
+    "price": 499,
+    "image": "https://i.ibb.co.com/Pv6s1pWP/playstation-5-pro-t2.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Xbox Series X",
+    "description": "High-performance gaming console with true 4K gaming experience.",
+    "price": 499,
+    "image": "https://i.ibb.co.com/nqtyJD78/Gear-Xbox-vs-PS5-1230432282.webp"
+  },
+  {
+    "id": 12,
+    "name": "Samsung QLED 65\" TV",
+    "description": "Ultra HD Smart TV with vibrant colors and immersive sound.",
+    "price": 1799,
+    "image": "https://images.unsplash.com/photo-1593784991095-a205069470b6"
+  },
+  {
+    "id": 13,
+    "name": "DJI Mini 3 Pro",
+    "description": "Lightweight drone with 4K camera and intelligent flight modes.",
+    "price": 759,
+    "image": "https://images.unsplash.com/photo-1527977966376-1c8408f9f108"
+  },
+  {
+    "id": 14,
+    "name": "GoPro HERO12",
+    "description": "Waterproof action camera with ultra-smooth stabilization.",
+    "price": 399,
+    "image": "https://i.ibb.co.com/kVj0cX5R/gopro-hero-12-black-10-promo.webp"
+  },
+  {
+    "id": 15,
+    "name": "Kindle Paperwhite",
+    "description": "E-reader with glare-free display and adjustable warm light.",
+    "price": 149,
+    "image": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0"
+  },
+  {
+    "id": 16,
+    "name": "Bose SoundLink Revolve",
+    "description": "Portable Bluetooth speaker with deep, immersive sound.",
+    "price": 229,
+    "image": "https://i.ibb.co.com/RG90VcR9/V9v-XV9-Ph-UYWAHYEqv5pc-ZH.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Razer BlackWidow V4",
+    "description": "Mechanical gaming keyboard with customizable RGB lighting.",
+    "price": 199,
+    "image": "https://images.unsplash.com/photo-1595225476474-87563907a212"
+  },
+  {
+    "id": 18,
+    "name": "ASUS ROG Gaming Monitor",
+    "description": "High refresh rate gaming monitor with ultra-low response time.",
+    "price": 699,
+    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf"
+  },
+  {
+    "id": 19,
+    "name": "Fitbit Charge 6",
+    "description": "Advanced fitness tracker with built-in GPS and health insights.",
+    "price": 179,
+    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6"
+  },
+  {
+    "id": 20,
+    "name": "Anker PowerCore 20000",
+    "description": "High-capacity power bank with fast charging support.",
+    "price": 79,
+    "image": "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd"
   }
 ]

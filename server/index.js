@@ -7,12 +7,23 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/items", (req, res) => {
-  res.json(items);
+  res.status(200).json(items);
 });
 
 app.get("/items/:id", (req, res) => {
-  const item = items.find(i => i.id === req.params.id);
-  res.json(item);
+  const { id } = req.params;
+
+  const item = items.find(i => i.id === Number(req.params.id));
+
+  if (!item) {
+    return res.status(404).json({
+      error: true,
+      message: "Item not found",
+    });
+  }
+
+  // 🔒 Always send valid JSON
+  return res.status(200).json(item);
 });
 
 app.listen(5000, () => {

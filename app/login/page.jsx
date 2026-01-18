@@ -36,7 +36,7 @@ export default function LoginPage() {
       >
         {/* Logo + Name */}
         <div className="text-center mb-5">
-          <div className="mx-auto w-12 h-12 mt-5 flex items-center justify-center rounded-xl bg-linear-to-br from-pink-400 via-purple-500 to-indigo-600 shadow-md">
+          <div className="mx-auto w-14 h-12 mt-5 flex items-center justify-center rounded-xl bg-linear-to-br from-pink-400 via-purple-500 to-indigo-600 shadow-md">
             <TbShoppingCartHeart className="text-white text-2xl" />
           </div>
 

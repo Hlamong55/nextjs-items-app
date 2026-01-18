@@ -13,21 +13,21 @@ const popularItems = [
     image: "/laptop.webp",
   },
   {
-    id: 2,
+    id: 5,
     name: "Gaming Headphones",
     description: "Immersive sound with premium build quality.",
     price: "$299",
     image: "/headphones.jpg",
   },
   {
-    id: 3,
+    id: 4,
     name: "Samsung Galaxy S22",
     description: "Flagship smartphone with stunning camera.",
     price: "$999",
     image: "/phone.jpg",
   },
   {
-    id: 4, 
+    id: 6, 
     name: "Smart Watch Series X",
     description: "Track fitness, health, and notifications on the go.",
     price: "$399",
@@ -94,7 +94,7 @@ export default function PopularItems() {
                   </span>
 
                   <Link
-                    href="/items"
+                     href={`/items/${item.id}`}
                     className="text-sm font-semibold text-indigo-600 hover:underline"
                   >
                     View Details →
