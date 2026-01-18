@@ -4,6 +4,7 @@ import HowItWorks from "@/components/sections/HowItWorks";
 import PopularItems from "@/components/sections/PopularItems";
 import Pricing from "@/components/sections/Pricing";
 import Testimonials from "@/components/sections/Testimonials";
+import CTA from "@/components/sections/CTA";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <PopularItems />
       <Pricing />
       <Testimonials />
+      <CTA />
     </>
   );
 }
