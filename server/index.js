@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const PORT = process.env.PORT || 5000;
 const items = require("./items.json");
 
 const app = express();
@@ -26,6 +27,6 @@ app.get("/items/:id", (req, res) => {
   return res.status(200).json(item);
 });
 
-app.listen(5000, () => {
-  console.log("Server running on http://localhost:5000");
+app.listen(PORT, () => {
+  console.log(`Server running on ${PORT}`);
 });
