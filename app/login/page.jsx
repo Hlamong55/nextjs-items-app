@@ -7,6 +7,7 @@ import { signIn } from "next-auth/react";
 import { motion } from "framer-motion";
 import { MOCK_USER } from "@/lib/auth";
 import Image from "next/image";
+import { TbShoppingCartHeart } from "react-icons/tb";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -35,11 +36,14 @@ export default function LoginPage() {
       >
         {/* Logo + Name */}
         <div className="text-center mb-5">
-          <div className="mx-auto flex items-center justify-center">
-            <img src="/logo.png" alt="ItemSphere Logo" className="w-56 h-28" />
+          <div className="mx-auto w-12 h-12 mt-5 flex items-center justify-center rounded-xl bg-linear-to-br from-pink-400 via-purple-500 to-indigo-600 shadow-md">
+            <TbShoppingCartHeart className="text-white text-2xl" />
           </div>
 
-          <h1 className="text-3xl font-bold text-gray-800">ItemSphere</h1>
+          <h1 className="mt-3 text-3xl font-extrabold text-gray-800">
+            Item<span className="text-purple-600">Sphere
+          </span></h1>
+
           <p className="text-gray-500 mt-1">
             Manage & explore items effortlessly
           </p>

@@ -14,7 +14,7 @@ export default function CTA() {
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/50" />
 
-      <div className="relative max-w-6xl mx-auto px-5 flex justify-center">
+      <div className="relative max-w-7xl mx-auto px-5 flex justify-center">
         {/* Glassy Card */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -39,7 +39,7 @@ export default function CTA() {
           </h2>
 
           {/* Description */}
-          <p className="text-white/80 max-w-3xl mx-auto mb-10 font-semibold leading-relaxed">
+          <p className="text-white/80 max-w-4xl mx-auto mb-10 font-semibold leading-relaxed">
             A modern full-stack application built with Next.js App Router,
             Google authentication, protected routes, and an Express.js backend —
             designed to be scalable, secure, and production-ready.
