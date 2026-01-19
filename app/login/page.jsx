@@ -20,6 +20,7 @@ export default function LoginPage() {
 
     if (email === MOCK_USER.email && password === MOCK_USER.password) {
       Cookies.set("isLoggedIn", "true", { expires: 1 });
+      showToast("success", "Login successful");
       router.push("/items");
     } else {
       setError("Invalid email or password");
