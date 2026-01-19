@@ -8,7 +8,7 @@ The project demonstrates real-world concepts such as public and protected routes
 ## 🌐 Live Demo
 
 - **Frontend (Vercel):**  
-  👉 https://itemsphere.vercel.app  
+  👉(https://nextjs-items-app.vercel.app/) 
 
 - **Backend API (Render):**  
   👉 https://itemsphere-api.onrender.com  
