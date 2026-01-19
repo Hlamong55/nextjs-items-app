@@ -27,6 +27,18 @@ app.get("/items/:id", (req, res) => {
   return res.status(200).json(item);
 });
 
+
+app.post("/items", (req, res) => {
+  const newItem = {
+    id: Date.now().toString(),
+    ...req.body,
+  };
+
+  items.push(newItem);
+  res.status(201).json(newItem);
+});
+
+
 app.listen(PORT, () => {
   console.log(`Server running on ${PORT}`);
 });

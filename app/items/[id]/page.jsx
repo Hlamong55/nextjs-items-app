@@ -2,14 +2,28 @@ export const dynamic = "force-dynamic";
 
 async function getItem(id) {
   try {
-    const res = await fetch(`http://localhost:5000/items/${id}`, {
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URL}/items/${id}`,
+    {
       cache: "no-store",
-    });
-    if (!res.ok) return null;
-    return await res.json();
-  } catch {
+    }
+  );
+
+  if (!res.ok) return null;
+
+  const data = await res.json();
+
+  // extra safety
+  if (!data || Object.keys(data).length === 0) {
     return null;
   }
+
+  return data;
+} catch (error) {
+  console.error("Fetch item error:", error);
+  return null;
+}
+
 }
 
 export default async function ItemDetails({ params }) {

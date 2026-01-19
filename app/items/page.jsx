@@ -3,9 +3,12 @@ import Link from "next/link";
 export const dynamic = "force-dynamic";
 
 async function getItems() {
-  const res = await fetch("http://localhost:5000/items", {
-    cache: "no-store",
-  });
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URL}/items`,
+    {
+      cache: "no-store",
+    }
+  );
 
   if (!res.ok) {
     throw new Error("Failed to fetch items");

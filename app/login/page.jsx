@@ -6,7 +6,7 @@ import Cookies from "js-cookie";
 import { signIn } from "next-auth/react";
 import { motion } from "framer-motion";
 import { MOCK_USER } from "@/lib/auth";
-import Image from "next/image";
+import { sweetToast } from "@/lib/sweetToast";
 import { TbShoppingCartHeart } from "react-icons/tb";
 
 export default function LoginPage() {
@@ -18,9 +18,17 @@ export default function LoginPage() {
   const handleMockLogin = (e) => {
     e.preventDefault();
 
-    if (email === MOCK_USER.email && password === MOCK_USER.password) {
+    if (
+      email.toLowerCase() === MOCK_USER.email.toLowerCase() &&
+      password === MOCK_USER.password
+    ) {
       Cookies.set("isLoggedIn", "true", { expires: 1 });
-      showToast("success", "Login successful");
+
+      sweetToast.fire({
+        icon: "success",
+        title: "Login successful",
+      });
+
       router.push("/items");
     } else {
       setError("Invalid email or password");
@@ -42,8 +50,8 @@ export default function LoginPage() {
           </div>
 
           <h1 className="mt-3 text-3xl font-extrabold text-gray-800">
-            Item<span className="text-purple-600">Sphere
-          </span></h1>
+            Item<span className="text-purple-600">Sphere</span>
+          </h1>
 
           <p className="text-gray-500 mt-1">
             Manage & explore items effortlessly
@@ -52,7 +60,9 @@ export default function LoginPage() {
 
         {/* Mock Login */}
         <form onSubmit={handleMockLogin} className="space-y-4">
-          {error && <p className="text-red-500 text-sm text-center">{error}</p>}
+          {error && (
+            <p className="text-red-500 text-sm text-center">{error}</p>
+          )}
 
           <input
             type="email"
@@ -120,7 +130,9 @@ export default function LoginPage() {
         {/* Demo Info */}
         <p className="text-xs text-gray-700 text-center my-6">
           Demo credentials: <br />
-          <span className="font-medium">admin@itemsphere.com / 123456</span>
+          <span className="font-medium">
+            admin@itemsphere.com / 123456
+          </span>
         </p>
       </motion.div>
     </section>
